@@ -1,0 +1,16 @@
+{
+  "name": "node-distributed-timer",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TheConnMan",
+  "license": "MIT",
+  "dependencies": {
+    "extend": "^3.0.0",
+    "ioredis": "^2.5.0",
+    "redlock": "^2.1.0"
+  }
+}
