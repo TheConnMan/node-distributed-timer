@@ -5,7 +5,12 @@ var log4js = require('log4js');
 var logger = log4js.getLogger();
 
 var timer = new Timer({
-  logger: logger
+  logger: logger,
+  tasks: {
+    log: function(id) {
+      logger.info('Completed task ' + id);
+    }
+  }
 });
 
 setInterval(function() {
