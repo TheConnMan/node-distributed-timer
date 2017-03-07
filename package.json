@@ -2,12 +2,21 @@
   "name": "node-distributed-timer",
   "version": "0.1.0",
   "description": "A simple module to set and clear timers using Redis for persistence",
+  "keywords": "job,schedule,scheduling,redis",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheConnMan/node-distributed-timer.git"
+  },
   "author": "TheConnMan",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheConnMan/node-distributed-timer/issues"
+  },
+  "homepage": "https://github.com/TheConnMan/node-distributed-timer",
   "dependencies": {
     "extend": "^3.0.0",
     "ioredis": "^2.5.0",
