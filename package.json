@@ -1,6 +1,6 @@
 {
   "name": "node-distributed-timer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple module to set and clear timers using Redis for persistence",
   "keywords": "job,schedule,scheduling,redis",
   "main": "index.js",
