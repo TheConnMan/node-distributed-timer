@@ -2,7 +2,13 @@
   "name": "node-distributed-timer",
   "version": "0.1.2",
   "description": "A simple module to set and clear timers using Redis for persistence",
-  "keywords": "job,schedule,scheduling,redis",
+  "keywords": [
+    "job",
+    "schedule",
+    "scheduling",
+    "redis",
+    "timer"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
