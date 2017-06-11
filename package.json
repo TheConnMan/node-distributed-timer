@@ -1,11 +1,19 @@
 {
   "name": "node-distributed-timer",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A simple module to set and clear timers using Redis for persistence",
-  "keywords": "job,schedule,scheduling,redis",
-  "main": "index.js",
+  "keywords": [
+    "job",
+    "schedule",
+    "scheduling",
+    "redis",
+    "timer"
+  ],
+  "main": "js/index.js",
+  "types": "js/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "tsc",
+    "prepublish": "tsc"
   },
   "repository": {
     "type": "git",
@@ -18,12 +26,18 @@
   },
   "homepage": "https://github.com/TheConnMan/node-distributed-timer",
   "dependencies": {
-    "extend": "^3.0.0",
-    "ioredis": "^2.5.0",
-    "redlock": "^2.1.0"
+    "extend": "^3.0.1",
+    "ioredis": "^3.1.1",
+    "redlock": "^3.0.0"
   },
   "devDependencies": {
+    "@types/extend": "^2.0.30",
+    "@types/ioredis": "0.0.23",
+    "@types/log4js": "0.0.32",
+    "@types/node-uuid": "0.0.28",
+    "@types/redlock": "0.0.30",
     "log4js": "^1.1.1",
-    "node-uuid": "^1.4.7"
+    "node-uuid": "^1.4.8",
+    "typescript": "^2.3.4"
   }
 }
