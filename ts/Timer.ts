@@ -50,6 +50,19 @@ class Timer {
     });
   }
 
+  public getKeys(): Array<string> {
+    var me = this;
+    return me.client.keys(me.options.prefix + ':work:*').then(keys => {
+      return keys.map(key => {
+        var taskIdArray = key.substring(me.options.prefix.length + 6).split(':');
+        return {
+          task: taskIdArray[0],
+          id: taskIdArray[1]
+        }
+      })
+    });
+  }
+
   public schedule(task, id, timeout): boolean {
     this.options.logger.debug('Scheduling job ' + id + ' with timeout ' + timeout);
     return this.client.set(this.getLockKey(task, id), id, 'PX', timeout, 'NX');
