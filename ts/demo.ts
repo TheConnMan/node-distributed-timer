@@ -1,8 +1,8 @@
-var Timer = require('./index');
-var uuid = require('node-uuid');
+import Timer from './Timer';
+import * as uuid from 'node-uuid';
 
-var log4js = require('log4js');
-var logger = log4js.getLogger();
+import * as Log4js from 'log4js';
+var logger = Log4js.getLogger();
 
 var timer = new Timer({
   logger: logger,
